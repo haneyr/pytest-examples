@@ -1,7 +1,7 @@
 import pytest
 
 # Python relative import
-from .. import my_module
+from .. import module
 
 @pytest.fixture(scope="session")
 def result_fixture():
