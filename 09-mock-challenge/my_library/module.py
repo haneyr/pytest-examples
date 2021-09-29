@@ -1,7 +1,7 @@
 import pandas as pd
 
 def is_sum_of_series_big(series):
-    # Lets check if this dataframe has over a million rows
+    # Lets check if this dataframe has over a thousand rows
     if series.sum() > 1000:
         return True
     else:
