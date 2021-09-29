@@ -1,0 +1,18 @@
+import pytest
+
+# Python relative import
+from .. import module
+
+@pytest.fixture(scope="session")
+def result_fixture():
+    result = module.load_data()
+    return result
+
+def test_not_three(result_fixture):
+    assert result_fixture != 3
+
+def test_object_type(result_fixture):
+    assert isinstance(result_fixture, int)
+
+def test_is_five(result_fixture):
+    assert result_fixture == 5

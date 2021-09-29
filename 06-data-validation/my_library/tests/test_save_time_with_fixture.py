@@ -5,7 +5,7 @@ from .. import module
 
 @pytest.fixture(scope="session")
 def result_fixture():
-    result = my_module.load_data()
+    result = module.load_data()
     return result
 
 def test_not_three(result_fixture):

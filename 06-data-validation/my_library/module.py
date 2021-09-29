@@ -1,6 +1,5 @@
 import time
 
-
 def load_data():
     """
     Sometimes in our data science code we have functions that take
